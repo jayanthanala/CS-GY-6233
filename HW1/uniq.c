@@ -49,10 +49,10 @@ int processCmdArgs(int argc, char **argv,int *flagc,int *flagd,int *flagi)
 }
 void calOutput(int fd,int flagc,int flagi, int flagd)
 {
-    char s[1024];
+    char s[102400];
     int n=0;
-    char curr[1024];
-    char prev[1024];
+    char curr[102400];
+    char prev[102400];
     int i=0;
     int word_len = 0;
     int dup_line_count = 1;
